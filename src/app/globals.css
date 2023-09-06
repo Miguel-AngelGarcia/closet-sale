@@ -16,6 +16,12 @@
   }
 }
 
+html {
+  line-height: 1.5;
+  font-size: 14px;
+  color: #000;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -25,3 +31,117 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.app {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.app .app-layers {
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+}
+
+/*Product page*/
+.product-page-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+.product {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.product-container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.product-container {
+  max-width: 55vw;
+}
+
+.prod-inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(calc(50% - 30px), 1fr));
+}
+
+.left-side {
+  padding-right: 3rem;
+  /*min-height: 70rem;*/
+  overflow: hidden;
+  position: relative;
+  max-width: calc(100% - 30px);
+  aspect-ratio: 53 / 81;
+}
+
+.image-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: -17px;
+  overflow: scroll;
+}
+
+.image-slider .image-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4rem;
+}
+
+.image-item {
+  height: auto;
+  margin-bottom: 4rem;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  position: relative;
+}
+
+/*
+.image-container {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}*/
+
+.right {
+}
+
+/*
+@media (min-width: 1366px) .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1024px) .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+  max-width: 960px;
+}
+@media (min-width: 768px) .container, .container-sm, .container-md {
+  max-width: 720px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 576px) .container, .container-sm {
+  max-width: 540px;
+}
+*/
