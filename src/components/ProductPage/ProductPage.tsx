@@ -1,15 +1,15 @@
 import React from "react";
-import { ProductLeft } from ".";
+import { ProductLeft, ProductRight } from ".";
 
 const ProductPage = () => {
   return (
-    <section className="product-page-wrapper">
-      <div id={"productId"} className="relative">
-        <div className="product-container">
-          <div className="prod-inner">
-            <ProductLeft />
-          </div>
+    <section className="product product-page-wrapper">
+      <div id={"productId"} className="relative product-container">
+        <div className="prod-inner">
+          <ProductLeft />
+          <ProductRight />
         </div>
+        <div className="related-dummy"></div>
       </div>
     </section>
   );
