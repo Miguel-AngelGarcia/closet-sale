@@ -161,6 +161,38 @@ img {
   padding-top: 50px;
 }
 
+.product-item-form {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.size-cart-row {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.atc-btn {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.atc-btn button {
+  width: 160px;
+  border: 1px solid black;
+  font-weight: 500;
+  padding: 7.5px 10px 7.5px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+}
+
+.btn-atc:hover {
+  background-color: #000;
+  color: white;
+}
+
 .accordian-details {
   margin-top: 20px;
   border-top-left-radius: 0;
@@ -172,8 +204,9 @@ img {
 
 .accordian-details {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1;
   margin-bottom: 10px;
+  margin-top: 0px;
   text-transform: uppercase;
 }
 
@@ -182,6 +215,25 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   text-align: left;
+  padding: 10px 0 10px 0;
+}
+
+.accordian-button {
+  display: flex;
+  width: 100%;
+}
+
+.accordian-button::after {
+  content: "-";
+  background-image: none;
+  transform: none;
+}
+
+.accordian-button::after {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
 }
 
 .accordian-button span {
@@ -192,6 +244,21 @@ img {
   transition: 0.4s all cubic-bezier(0.7, 0, 0.3, 1);
 }
 
+.accordian-desc {
+  padding: 0 15px 0 0;
+}
+
+.item-desc {
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.item-desc p {
+  line-height: 20px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
 a,
 .entry {
   color: #000;
@@ -200,6 +267,13 @@ a,
 h2 {
   font-weight: 600;
   margin-bottom: 0;
+}
+
+.btn {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, boxshadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  vertical-align: middle;
 }
 /*
 @media (min-width: 1366px) .container,
