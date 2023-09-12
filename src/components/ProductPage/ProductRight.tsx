@@ -34,7 +34,13 @@ const ProductRight = () => {
         <div className="size-cart-row">
           <div className="item-size w-1/2">
             <label>Size</label>
-            {mockDesc[0].size}
+            <ul>
+              <li className="item-li">
+                <div className="flex items-center justify-center">
+                  <span>{mockDesc[0].size}</span>
+                </div>
+              </li>
+            </ul>
           </div>
           <div className="atc-btn">
             <button className="btn-atc btn" type="submit">
