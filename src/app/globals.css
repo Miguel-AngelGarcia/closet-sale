@@ -361,6 +361,14 @@ h2 {
   font-weight: 200;
 }
 
+.u-below {
+  border-bottom: 1px solid transparent;
+}
+
+.u-below:hover {
+  border-bottom: 1px solid black;
+}
+
 @media (min-width: 576px) {
   .product-container {
     max-width: 540px;
@@ -370,6 +378,10 @@ h2 {
 @media (min-width: 768px) {
   .product-container {
     max-width: 720px;
+  }
+
+  .image-slider .image-slider-item {
+    width: inherit;
   }
 }
 

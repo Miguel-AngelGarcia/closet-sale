@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="footer-menu w-full">
             <ul className="footer-list">
               {footerItems.map((footerItem) => (
-                <li key={footerItem.name} className="footer-item">
+                <li key={footerItem.name} className="footer-item u-below uln">
                   <a href={footerItem.link}>{footerItem.name}</a>
                 </li>
               ))}
