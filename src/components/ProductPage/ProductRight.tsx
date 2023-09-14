@@ -33,7 +33,7 @@ const ProductRight = () => {
       <form className="product-item-form">
         <div className="size-cart-row">
           <div className="item-size w-1/2">
-            <label>Size</label>
+            <label className="size-label">Size</label>
             <ul>
               <li className="item-li">
                 <div className="flex items-center justify-center">
@@ -43,7 +43,7 @@ const ProductRight = () => {
             </ul>
           </div>
           <div className="atc-btn">
-            <button className="btn-atc btn" type="submit">
+            <button className="btn-atc btn mt-[20px]" type="submit">
               add to cart
             </button>
           </div>

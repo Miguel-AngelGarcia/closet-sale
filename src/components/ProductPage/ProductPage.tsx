@@ -1,5 +1,5 @@
 import React from "react";
-import { ProductLeft, ProductRight } from ".";
+import { ProductLeft, ProductRight, RelatedProducts } from ".";
 
 const ProductPage = () => {
   return (
@@ -9,7 +9,7 @@ const ProductPage = () => {
           <ProductLeft />
           <ProductRight />
         </div>
-        <div className="related-dummy"></div>
+        <RelatedProducts />
       </div>
     </section>
   );
