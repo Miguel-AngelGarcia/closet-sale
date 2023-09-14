@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { ProductPage } from "@/components";
+import { ProductPage, Categories } from "@/components";
 
 export default function Home() {
   return (
     <main className="bg-white main">
-      <ProductPage />
+      <Categories />
     </main>
   );
 }
