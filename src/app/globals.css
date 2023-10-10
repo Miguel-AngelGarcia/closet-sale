@@ -781,3 +781,103 @@ h2 {
     padding-right: 15px;
   }
 }
+
+/*TEST BELOW*/
+.nav-top {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 0 40px;
+  background-color: red;
+}
+
+.container-for-all {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+.nav-black-wrapper {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  color: white;
+  /*
+  display: flex;
+  position: sticky;
+  top: 0;
+  */
+}
+
+.nav-black-cont {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.other {
+  display: flex;
+  position: sticky;
+  top: 25px;
+  height: 25px;
+  background-color: blue;
+}
+
+.form-group {
+  transition: all 0.3s;
+  margin: 0 0 10px 0;
+  width: 150px;
+  height: 50px;
+}
+
+.form-group > .form-label {
+  margin-left: 12px;
+}
+
+.form-label {
+  font-size: 16px;
+  line-height: 1;
+  color: black;
+  display: block;
+  opacity: 1;
+  transform: translateY(-34px);
+  /*height of input - font-size*/
+  transform-origin: 0 0;
+  transition: all 0.3s;
+  width: min-content;
+  height: min-content;
+}
+.form-control {
+  border: black solid 2px;
+  box-shadow: none;
+  background-color: white;
+  transition: all 0.3s;
+  width: 100%;
+  height: 50px;
+}
+
+.form-control::placeholder {
+  color: transparent;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: red;
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+  /*
+  (height of input - font-size)
+  * (1 + scale[0.6])
+  
+  */
+  transform: translateY(-54.4px) scale(0.6);
+  background-color: white;
+}
+
+/*
+.form-group:focus-within {
+  transform: scale(1.01, 1.01);
+}*/

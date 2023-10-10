@@ -2,5 +2,6 @@ import Navbar from "./Nabvar/Navbar";
 import ProductPage from "./ProductPage/ProductPage";
 import Footer from "./Footer";
 import Categories from "./Categories/Categories";
+import Form from "./Form/Form";
 
-export { Navbar, ProductPage, Footer, Categories };
+export { Navbar, ProductPage, Footer, Categories, Form };

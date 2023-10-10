@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { navbarLinks } from "@/constants";
+import { StickyNac } from ".";
 
 const Navbar = () => {
   return (
