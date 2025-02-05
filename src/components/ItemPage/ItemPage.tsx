@@ -24,7 +24,7 @@ const ItemPage = () => {
                 <span>$</span>
               </div>
             </div>
-            <CheckoutForm cartItems={cartItems} setCartItems={setCartItems} />
+            <CheckoutForm />
             <div className="product__details">
               <h2 className="hd_details">
                 <button className="accordion-button">

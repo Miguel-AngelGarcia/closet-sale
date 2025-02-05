@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 
-const CheckoutForm = ({ cartItems, setCartItems }) => {
+const CheckoutForm = () => {
   const avail_sizes = [
     { index: 0, size: "XXS" },
     { index: 1, size: "XS" },
@@ -14,11 +14,6 @@ const CheckoutForm = ({ cartItems, setCartItems }) => {
   ];
 
   const [sizeIndex, setSizeIndex] = useState(0);
-
-  function handleSubmit() {
-    setCartItems(...cartItems, sizeIndex);
-    alert(cartItems);
-  }
 
   return (
     <>
