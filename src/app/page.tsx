@@ -3,7 +3,6 @@ import {
   ProductPage,
   Categories,
   Form,
-  TissueBox,
   Connect,
   Hero,
   NewItems,
