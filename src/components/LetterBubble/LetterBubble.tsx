@@ -1,6 +1,6 @@
 import React from "react";
 
-const LetterBubble = ({ imageIndex }) => {
+const LetterBubble = () => {
   return (
     <div className="letter_bubble">
       <div className="letter_bubble__wrapper">
