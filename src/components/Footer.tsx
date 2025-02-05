@@ -13,6 +13,24 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-row">
         <div className="footer-cont">
+          <div class="about">
+            <a href="/about">
+              <img src="./about_f.svg"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+/**
+ * return (
+    <footer className="footer">
+      <div className="footer-row">
+        <div className="footer-cont">
           <div className="footer-menu w-full">
             <ul className="footer-list">
               {footerItems.map((footerItem) => (
@@ -26,6 +44,5 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+ * 
+*/

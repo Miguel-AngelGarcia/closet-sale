@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { navbarLinks } from "@/constants";
-import { NavLinks, StickyNac } from ".";
+import { StickyNac } from ".";
 
 const Navbar = () => {
   return (
@@ -10,7 +10,15 @@ const Navbar = () => {
         <a>
           <Image src="./tumbao.svg" alt="logo" height={80} width={160} />
         </a>
-        <NavLinks />
+        <div className="navbarLinks">
+          {navbarLinks.map((navlink) => (
+            <ul key={navlink.name}>
+              <a href={navlink.link} className={`nav-item ${navlink.class}`}>
+                {navlink.name}
+              </a>
+            </ul>
+          ))}
+        </div>
       </div>
     </nav>
   );

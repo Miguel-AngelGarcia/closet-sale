@@ -6,6 +6,9 @@ import Form from "./Form/Form";
 import TissueBox from "./TissueBox/TissueBox";
 import Connect from "./Connect";
 import Hero from "./Hero";
+import NewItems from "./NewItems/NewItems";
+import { ItemPage } from "./ItemPage";
+import { HomeScreen } from "./HomeScreen";
 
 export {
   Navbar,
@@ -16,4 +19,7 @@ export {
   TissueBox,
   Connect,
   Hero,
+  NewItems,
+  ItemPage,
+  HomeScreen,
 };
