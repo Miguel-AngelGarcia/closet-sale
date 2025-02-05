@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-row">
         <div className="footer-cont">
-          <div class="about">
+          <div className="about">
             <a href="/about">
               <img src="./about_f.svg"></img>
             </a>
