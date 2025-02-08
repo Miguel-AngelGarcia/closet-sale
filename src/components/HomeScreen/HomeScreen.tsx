@@ -16,6 +16,7 @@ const HomeScreen = () => {
               <image
                 width="1600"
                 height="1073"
+                className="new-items-lg"
                 xlinkHref="https://res.cloudinary.com/whatsfordinner42069/image/upload/v1723516734/landing_page_dmkb4z.jpg"
               />
               <a href="/coulot">

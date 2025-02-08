@@ -813,6 +813,8 @@ input[type="reset"]:not(:hover):not(:active):not(.has-background),
   }
 }
 
+/*Navbar & footer & home-cont padding
+ edited here*/
 @media (max-width: 1024px) {
   .navbar-cont {
     padding: 0 30px;
@@ -855,6 +857,10 @@ input[type="reset"]:not(:hover):not(:active):not(.has-background),
   .navbar-cont {
     padding: 0 15px;
   }
+
+  .footer-row {
+    padding: 0 30px;
+  }
 }
 
 /*sizes changed for navbar here
@@ -883,7 +889,9 @@ homescreen-cont margin-top must equal each other
   .home-screen-cont {
     padding: 0 15px;
     margin-top: 87px;
+    height: 100vh;
   }
+
   .product-cont {
     padding: 0px 15px;
     max-width: none;
@@ -917,6 +925,10 @@ homescreen-cont margin-top must equal each other
   }
   .slider-imgs {
     width: calc(100%);
+  }
+
+  .footer-row {
+    padding: 0 15px;
   }
 }
 
