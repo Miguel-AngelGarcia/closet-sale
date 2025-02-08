@@ -79,13 +79,22 @@ img {
   justify-content: space-between;
 }
 
-/*Basket - add to cart*/
-.basket_div {
-  width: 28px;
+/*Logo*/
+.tl-logo {
+  height: 80px;
+  width: 160px;
 }
+
+/*Basket - add to cart*/
 
 .basket_wall {
   height: 32px;
+  width: 32px;
+}
+
+.basket_div {
+  height: 100%;
+  width: 100%;
 }
 
 .basket_start {
@@ -112,6 +121,12 @@ img {
   position: relative;
   align-items: center;
   justify-content: center;
+  height: 100%;
+}
+
+.cart-cont img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .cart-item-badge {
@@ -143,7 +158,7 @@ img {
 /* HOME SCREEN */
 .home-screen-cont {
   position: relative;
-  padding: 0 100px 0 100px;
+  padding: 0 50px 0 50px;
   margin-top: 116px;
 }
 
@@ -803,6 +818,10 @@ input[type="reset"]:not(:hover):not(:active):not(.has-background),
     padding: 0 30px;
   }
 
+  .home-screen-cont {
+    padding: 0 30px;
+  }
+
   .product-cont {
     padding: 0px 15px;
     max-width: 720px;
@@ -825,6 +844,9 @@ input[type="reset"]:not(:hover):not(:active):not(.has-background),
 }
 
 @media (max-width: 767px) {
+  .home-screen-cont {
+    padding: 0 15px;
+  }
   .product-cont {
     padding: 0px 15px;
     max-width: 540px;
@@ -835,11 +857,33 @@ input[type="reset"]:not(:hover):not(:active):not(.has-background),
   }
 }
 
+/*sizes changed for navbar here
+Remember, navbar-wrapper height and 
+homescreen-cont margin-top must equal each other
+*/
 @media (max-width: 575px) {
+  .navbar-wrapper {
+    padding: 0px 0 0px 0;
+    height: 58px;
+  }
   .navbar-cont {
     padding: 0 15px;
   }
 
+  .tl-logo {
+    height: 40px;
+    width: 80px;
+  }
+
+  .basket_wall {
+    height: 24px;
+    width: 24px;
+  }
+
+  .home-screen-cont {
+    padding: 0 15px;
+    margin-top: 56px;
+  }
   .product-cont {
     padding: 0px 15px;
     max-width: none;
@@ -877,6 +921,9 @@ input[type="reset"]:not(:hover):not(:active):not(.has-background),
 }
 
 @media (max-width: 500px) {
+  .home-screen-cont {
+    padding: 0 15px 0 15px;
+  }
   .vib {
     border: solid 2px;
     border-color: #000;

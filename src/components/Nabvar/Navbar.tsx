@@ -8,7 +8,13 @@ const Navbar = () => {
     <nav className="navbar-wrapper nav-expand bg-white">
       <div className="navbar-cont">
         <a>
-          <Image src="./tumbao.svg" alt="logo" height={80} width={160} />
+          <Image
+            src="./tumbao.svg"
+            alt="logo"
+            height={80}
+            width={160}
+            className="tl-logo"
+          />
         </a>
         <NavLinks />
       </div>
